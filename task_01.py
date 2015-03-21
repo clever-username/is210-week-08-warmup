@@ -10,7 +10,7 @@ def fibonacci(maxint):
         maxint(int): Maximum value for the interations of loop.
 
     Returns:
-        list(list):  List of generated values.
+        my_list(list):  List of generated values.
 
     Examples:
         >>> fibonacci(10)
@@ -22,8 +22,8 @@ def fibonacci(maxint):
     """
 
     int_1, int_2 = 0, 1
-    list = [int_1]
+    my_list = [int_1, ]
     while int_2 < maxint:
-        list.append(int_2)
+        my_list.append(int_2)
         int_1, int_2 = int_2, int_1 + int_2
-    return list
+    return my_list
